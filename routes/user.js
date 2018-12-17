@@ -16,7 +16,7 @@ const app = express();
 const router = express.Router();
 
 /**
-* Create a connection pool--This will ensure the server doesn't overload with requests.
+* Create a connection pool -- This will ensure the server doesn't overload with requests.
 */
 const pool = sql.createPool({
     connectionLimit: 10, // Create connection limit of 10 clients.
@@ -34,7 +34,7 @@ function getConnection() {
 };
 
 /**
-*  Get all users from SQL database a render them in JSON format.
+*  Get all users from SQL database and render them in JSON format.
 */
 router.get("/users", function(req, res){
 
