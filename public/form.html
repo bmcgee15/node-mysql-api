@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='description' content='This form will allow a client to Create, Read, Update, and Delete data from an SQL database.'>
+    <meta name='author' content='Austin Henderson, Bret McGee'>
+    <title>API | MySQL & Nodejs</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0 3em;
+            background-color: #E3E3E3;
+        }
+        #createUser {
+            width: 33.33333333333333333333333%;
+            text-align: center;
+            float: left;
+            margin-bottom: 1em;
+        }
+        #createUser input {
+            width: 95%;
+            height: 2em;
+            padding: 0.2sem;
+            margin-bottom: 1em;
+            color: red;
+        }
+        #fieldset {
+            border: 1px solid lightgrey;
+            background-color: #fff;
+            min-height: 17em;
+            margin-top: 1em;
+        }
+        #btn {
+            color: red;
+            border: none;
+            background-color: lightcoral;
+            font-weight: bold;
+        }
+        h1 {
+            color: lightcoral;
+        }
+        #fetchUser {
+            text-align: center;
+            width: 31%;
+            margin: auto;
+            position: absolute;
+            top: 21em;
+            right: 34.5%;
+        }
+        #fetchUser #btn {
+            width: 95%;
+            height: 2em;
+        }
+        #getAllUsers {
+            border: 1px solid lightgrey;
+            min-height: 8em;
+        }
+        #footer {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 0em;
+            right: 1%
+        }
+    </style>
+</head>
+<body>
+    <div id="createUser">
+        <fieldset id='fieldset'>
+            <form action="/createUser" method='POST'>
+                <h1>Create User</h1>
+                <input type="text" name='createFirstName' placeholder="First Name">
+                <br>
+                <input type="text" name='createLastName' placeholder="Last Name">
+                <br>
+                <input type="submit" id='btn'>
+            </form>
+        </fieldset>  
+    </div>
+    <div id="createUser">
+        <fieldset id='fieldset'>
+            <form action="/deleteUser" method='POST'>
+                <h1>Delete User</h1>
+                <input type='text' placeholder="User ID" name="userId" />
+                <input type="submit" id='btn'>
+            </form>
+        </fieldset>  
+    </div>
+    <div id="createUser">
+        <fieldset id='fieldset'>
+            <form action="/updateUser" method='POST'>
+                <h1>Update User</h1>
+                <input placeholder="User ID" name="id" />
+                <input placeholder="New First Name" name="newFirstName" />
+                <input placeholder="New Last Name" name="newLastName" />
+                <input type="submit" id='btn'>
+            </form>
+        </fieldset>  
+    </div>
+    <div id="fetchUser">
+        <fieldset id='getAllUsers'>
+            <form action="/users" method='GET'>
+                <h1>Get All Users</h1>
+                <input type="submit" id='btn'>
+            </form>
+        </fieldset>  
+    </div>
+    <div id="footer">
+        <h5>* Note: This page does NOT reflect our ability to execute HTML and CSS.
+        This page was thrown together to provide a simple interface for our Node backend.</h5>
+    </div>
+</body>
+</html>

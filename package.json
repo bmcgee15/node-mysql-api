@@ -1,0 +1,25 @@
+{
+  "name": "nodejs_crud_mysql_json",
+  "version": "1.0.1",
+  "description": "The API will output SQL database information in JSON format.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CRUD",
+    "MySQL",
+    "Node",
+    "JS",
+    "Database"
+  ],
+  "author": "Austin Henderson && Bret Mcgee",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  }
+}
