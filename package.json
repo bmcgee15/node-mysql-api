@@ -13,7 +13,7 @@
     "JS",
     "Database"
   ],
-  "author": "Austin Henderson && Bret Mcgee",
+  "author": "Austin Henderson && Bret McGee",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
